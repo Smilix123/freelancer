@@ -15,15 +15,35 @@
       <div class="header__inner">
         <img src="./images/logo.svg" alt="Логотип" class="header__logo" />
         <div class="icons">
-          <img src="./images/icons/github.svg" alt="Гитхаб" />
-          <img src="./images/icons/twitter.svg" alt="Твиттер" />
-          <img src="./images/icons/instagram.svg" alt="Инстаграмм" />
-          <img src="./images/icons/facebook.svg" alt="" />
+          <a href="#0"
+            ><img
+              src="./images/icons/github.svg"
+              class="link-icon"
+              alt="Гитхаб"
+          /></a>
+          <a href="#0"
+            ><img
+              src="./images/icons/twitter.svg"
+              class="link-icon"
+              alt="Твиттер"
+          /></a>
+          <a href="#0"
+            ><img
+              src="./images/icons/instagram.svg"
+              class="link-icon"
+              alt="Инстаграмм"
+          /></a>
+          <a href="#0"
+            ><img
+              src="./images/icons/facebook.svg"
+              class="link-icon"
+              alt="Фэйсбук"
+          /></a>
         </div>
       </div>
     </header>
     <main class="main">
-      <section class="about">
+      <section class="about section">
         <div class="about__inner">
           <div class="about__me">
             <span class="about__employment">Фрилансер</span>
@@ -32,7 +52,7 @@
               Разрабатываю сайты для малого и среднего бизнеса. У меня можно
               заказать дизайн и верстку небольшого сайта или интернет-магазина
             </p>
-            <button class="about__button" type="button">
+            <button class="about__button button" type="button">
               бесплатная консультация
             </button>
           </div>
@@ -40,9 +60,9 @@
         </div>
       </section>
 
-      <section class="benefits">
+      <section class="benefits section">
         <div class="benefits__inner">
-          <h2 class="benefits__title">Со мной удобно работать</h2>
+          <h2 class="benefits__title title">Со мной удобно работать</h2>
           <ul class="benefits__list">
             <li class="benefits__list-item">
               <article class="benefits__card">
@@ -131,7 +151,192 @@
           </ul>
         </div>
       </section>
+      <section class="projects section">
+        <h2 class="title">Выполненные проекты</h2>
+        <ul class="projects__list">
+          <li class="projects__list-item project-corner">
+            <arcticle class="project-card">
+              <h3 class="project__card-title">
+                The curious corner of chamarel
+              </h3>
+              <button class="project__card-link">Посмотреть</button>
+            </arcticle>
+          </li>
+          <li class="projects__list-item project-golf">
+            <arcticle class="project-card">
+              <h3 class="project__card-title">Gymkhana club golf course</h3>
+              <button class="project__card-link">Посмотреть</button>
+            </arcticle>
+          </li>
+          <li class="projects__list-item project-hiking">
+            <arcticle class="project-card">
+              <h3 class="project__card-title">
+                Tamarind falls hiking trip - full day
+              </h3>
+              <button class="project__card-link">Посмотреть</button>
+            </arcticle>
+          </li>
+        </ul>
+      </section>
+
+      <section class="gallery section">
+        <ul class="gallery__list">
+          <li class="gallery__list-item">
+            <img
+              src="./images/gallery/gallery-image-01.png"
+              class="gallery__list-image"
+              alt=""
+            />
+          </li>
+          <li class="gallery__list-item">
+            <img
+              src="./images/gallery/gallery-image-02.jpg"
+              class="gallery__list-image"
+              alt=""
+            />
+          </li>
+          <li class="gallery__list-item">
+            <img
+              src="./images/gallery/gallery-image-03.jpg"
+              class="gallery__list-image"
+              alt=""
+            />
+          </li>
+          <li class="gallery__list-item">
+            <img
+              src="./images/gallery/gallery-image-04.jpg"
+              class="gallery__list-image"
+              alt=""
+            />
+          </li>
+          <li class="gallery__list-item">
+            <img
+              src="./images/gallery/gallery-image-05.jpg"
+              class="gallery__list-image"
+              alt=""
+            />
+          </li>
+          <li class="gallery__list-item">
+            <img
+              src="./images/gallery/gallery-image-06.jpg"
+              class="gallery__list-image"
+              alt=""
+            />
+          </li>
+          <li class="gallery__list-item">
+            <img
+              src="./images/gallery/gallery-image-07.jpg"
+              class="gallery__list-image"
+              alt=""
+            />
+          </li>
+          <li class="gallery__list-item">
+            <img
+              src="./images/gallery/gallery-image-08.jpg"
+              class="gallery__list-image"
+              alt=""
+            />
+          </li>
+          <li class="gallery__list-item">
+            <img
+              src="./images/gallery/gallery-image-09.jpg"
+              class="gallery__list-image"
+              alt=""
+            />
+          </li>
+          <li class="gallery__list-item">
+            <img
+              src="./images/gallery/gallery-image-10.jpg"
+              class="gallery__list-image"
+              alt=""
+            />
+          </li>
+          <li class="gallery__list-item">
+            <img
+              src="./images/gallery/gallery-image-11.jpg"
+              class="gallery__list-image"
+              alt=""
+            />
+          </li>
+          <li class="gallery__list-item">
+            <img
+              src="./images/gallery/gallery-image-12.jpg"
+              class="gallery__list-image"
+              alt=""
+            />
+          </li>
+        </ul>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer section">
+      <h3 class="title">Свяжитесь со мной</h3>
+      <div class="footer__divider">
+        <div class="footer__form">
+          <p class="form__title">
+            Можете просто оставить заявку, я позвоню вам сегодня
+          </p>
+          <div class="form__input-box">
+            <div class="text-field__icon text-field__icon_name">
+              <input
+                class="text-field__input"
+                type="text"
+                placeholder="Ваше имя"
+              />
+            </div>
+            <div class="text-field__icon text-field__icon_phone">
+              <input
+                class="text-field__input"
+                type="text"
+                placeholder="Ваш телефон"
+              />
+            </div>
+          </div>
+          <button class="button">Бесплатная консультация</button>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contacts-item">
+            <p class="footer__contacts-title">Телефон</p>
+            <a href="tel:+79991234567" class="footer__contacts-link"
+              >+7 999 123 45 67</a
+            >
+          </div>
+          <div class="footer__contacts-item">
+            <p class="footer__contacts-title">Почта</p>
+            <a href="mailto:ivanov@mail.ru" class="footer__contacts-link"
+              >ivanov@mail.ru</a
+            >
+          </div>
+          <div class="footer__contacts-item">
+            <p class="footer__contacts-title">Соцсети</p>
+            <div class="icons">
+              <a href="#0"
+                ><img
+                  src="./images/icons/github.svg"
+                  class="link-icon"
+                  alt="Гитхаб"
+              /></a>
+              <a href="#0"
+                ><img
+                  src="./images/icons/twitter.svg"
+                  class="link-icon"
+                  alt="Твиттер"
+              /></a>
+              <a href="#0"
+                ><img
+                  src="./images/icons/instagram.svg"
+                  class="link-icon"
+                  alt="Инстаграмм"
+              /></a>
+              <a href="#0"
+                ><img
+                  src="./images/icons/facebook.svg"
+                  class="link-icon"
+                  alt="Фэйсбук"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
