@@ -29,8 +29,8 @@
 
 .icons {
   display: flex;
-  gap: 16px;
   align-items: center;
+  gap: 16px;
 }
 
 .icon {
@@ -172,41 +172,60 @@
   list-style: none;
 }
 
+.projects__list-item {
+  border-radius: 6px;
+}
+
 .projects {
   color: var(--main-color);
   background-color: var(--light-bg-color);
 }
-
-.project-card {
+.projects__card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 23px;
+  gap: 16px;
   width: 100%;
   max-width: 304px;
   height: 304px;
-  border-radius: 6px;
   padding: 32px 100px 32px 32px;
-  background: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.project-corner {
+.projects__card-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: block;
+  border-radius: 6px;
+  background: linear-gradient(rgba(196, 196, 196, 0) 0%, #213e60 100%);
+}
+
+.projects-corner {
   background-image: url(../images/project-card/bg-01.jpg);
 }
 
-.project-golf {
+.projects-golf {
   background-image: url(../images/project-card/bg-02.jpg);
 }
 
-.project-hiking {
+.projects-hiking {
   background-image: url(../images/project-card/bg-03.jpg);
 }
 
-.project__card-link {
+.projects__card-title {
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+.projects__card-button {
+  position: relative;
+  z-index: 1;
   width: 120px;
   min-height: 36px;
+  border: 2px solid transparent;
   border-style: none;
   border-radius: 6px;
   box-shadow: 0 2px 0 0 #ce1c3e;
@@ -215,6 +234,14 @@
   font-size: 12px;
   line-height: 1.3;
   background-color: #ec1f46;
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.projects__card-button:hover {
+  border: 2px solid #ec1f46;
+  box-shadow: none;
+  background-color: transparent;
 }
 
 .gallery {
@@ -228,11 +255,35 @@
   list-style: none;
 }
 
+.gallery__list-item {
+  position: relative;
+  cursor: pointer;
+
+}
+
 .gallery__list-image {
   width: 224px;
   height: 224px;
   border-radius: 6px;
   object-fit: cover;
+}
+
+.video__overlay {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 15px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+
+.video__overlay-playicon {
+  width: 15px;
+  height: 15px;
 }
 
 .footer {
@@ -274,10 +325,10 @@
   width: 100%;
   height: 70px;
   margin-left: 10px;
+  border: 2px solid transparent;
   border-radius: 5px;
   font-size: 1rem;
   background-color: #f8f8f8;
-  border: 2px solid transparent;
   transition: border 0.3s;
 }
 
@@ -333,6 +384,10 @@
 .form-button:hover {
   border-color: var(--accent-color);
   background-color: var(--main-color);
+}
+
+.link:hover {
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .footer__contacts {
