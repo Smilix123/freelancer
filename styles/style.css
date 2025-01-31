@@ -96,6 +96,10 @@
   color: var(--main-color);
 }
 
+.about__button > a {
+  text-decoration: none;
+}
+
 .button {
   border: 2px solid transparent;
   border-radius: 6px;
