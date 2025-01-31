@@ -335,7 +335,7 @@
     <footer class="footer section">
       <h3 class="title">Свяжитесь со мной</h3>
       <div class="footer__divider">
-        <div class="footer__form">
+        <form class="footer__form" action="" method="get">
           <p class="form__title">
             Можете просто оставить заявку, я позвоню вам сегодня
           </p>
@@ -343,6 +343,7 @@
             <div class="text-field__icon text-field__icon_name">
               <input
                 class="text-field__input"
+                name="name"
                 type="text"
                 placeholder="Ваше имя"
               />
@@ -350,13 +351,16 @@
             <div class="text-field__icon text-field__icon_phone">
               <input
                 class="text-field__input"
+                name="phone"
                 type="tel"
                 placeholder="Ваш телефон"
               />
             </div>
           </div>
-          <button class="form-button button">Бесплатная консультация</button>
-        </div>
+          <button type="submit" class="form-button button">
+            Бесплатная консультация
+          </button>
+        </form>
         <div class="footer__contacts">
           <ul class="footer__contacts-list">
             <li class="footer__contacts-item">

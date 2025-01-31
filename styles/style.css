@@ -52,7 +52,6 @@
 }
 
 .about {
-  
   background-color: var(--light-bg-color);
 }
 
@@ -258,7 +257,6 @@
 .gallery__list-item {
   position: relative;
   cursor: pointer;
-
 }
 
 .gallery__list-image {
