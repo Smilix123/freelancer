@@ -1,7 +1,3 @@
-* {
-  outline: 1px solid green;
-}
-
 .section {
   padding: 88px 168px;
 }
@@ -283,7 +279,6 @@
 .text-field__icon::before {
   content: "";
   position: absolute;
-  top: 0;
   top: 50%;
   bottom: 0;
   left: 0.625rem;
@@ -320,9 +315,6 @@
   width: 384px;
   height: 100%;
   color: var(--main-color);
-}
-
-.footer__contacts-item {
 }
 
 .footer__contacts-title {
