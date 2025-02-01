@@ -189,6 +189,7 @@
   color: var(--main-color);
   background-color: var(--light-bg-color);
 }
+
 .projects__card {
   position: relative;
   display: flex;
@@ -318,7 +319,7 @@
   background-color: var(--main-color);
 }
 
-.form__title {
+.footer__form-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.56;
@@ -326,71 +327,41 @@
   text-wrap: pretty;
 }
 
-.form__input-box {
+.footer__form-input-box {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
-.text-field__input {
-  display: block;
-  width: 100%;
-  height: 70px;
-  margin-left: 10px;
+.footer__form-input {
+  position: relative;
   border: 2px solid transparent;
   border-radius: 5px;
-  font-size: 1rem;
+  padding: 20px 35px;
+  box-shadow: 0 0 0 0 var(--accent-color);
+  font-size: 16px;
   background-color: #f8f8f8;
-  transition: border 0.3s;
 }
 
-.text-field__input:hover {
+.footer__form-input::placeholder {
+  color: #949494;
+  font-size: 14px;
+}
+
+.footer__form-input:hover {
   border: 2px solid var(--accent-color);
 }
 
-.text-field__input:focus {
+.footer__form-input:focus {
   border: 2px solid var(--accent-color);
   box-shadow: 0 0 0 0.7px var(--accent-color);
   outline: none;
 }
 
-.text-field__input::placeholder {
-  color: #949494;
-  font-size: 14px;
-}
-
-.text-field__icon {
+.footer__form-input-icon {
   position: relative;
-}
-
-.text-field__icon::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  bottom: 0;
-  left: 0.625rem;
-  display: flex;
-  align-items: center;
-  color: #bdbdbd;
-  transform: translateY(-50%);
-}
-
-.text-field__icon input {
-  padding-left: 3rem;
-}
-
-.text-field__icon_name::before {
-  width: 4rem;
-  background-image: url(../images/icons/user-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.text-field__icon_phone::before {
-  width: 4rem;
-  background-image: url(../images/icons/phone-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  bottom: 25%;
+  left: 3%;
+  width: 16px;
 }
 
 .form-button:hover {
@@ -398,8 +369,16 @@
   background-color: var(--main-color);
 }
 
-.link:hover {
-  border-bottom: 2px solid var(--accent-color);
+.text-link {
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration-color: var(--accent-color);
+  text-decoration-line: underline;
+  text-decoration-thickness: 1.5px;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 4px;
 }
 
 .footer__contacts {
@@ -438,9 +417,6 @@
 .policy {
   position: absolute;
   align-self: flex-end;
-  color: #949494;
+  color: var(--main-color);
   font-size: 15px;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  cursor: pointer;
 }

@@ -336,26 +336,30 @@
       <h3 class="title">Свяжитесь со мной</h3>
       <div class="footer__divider">
         <form class="footer__form" id="consultation" method="get">
-          <p class="form__title">
+          <p class="footer__form-title">
             Можете просто оставить заявку, я позвоню вам сегодня
           </p>
-          <div class="form__input-box">
-            <div class="text-field__icon text-field__icon_name">
-              <input
-                class="text-field__input"
-                name="name"
-                type="text"
-                placeholder="Ваше имя"
-              />
-            </div>
-            <div class="text-field__icon text-field__icon_phone">
-              <input
-                class="text-field__input"
-                name="phone"
-                type="tel"
-                placeholder="Ваш телефон"
-              />
-            </div>
+          <div class="footer__form-input-box">
+            <input
+              class="footer__form-input"
+              name="name"
+              type="text"
+              placeholder="Ваше имя"
+            /><img
+              class="footer__form-input-icon"
+              src="./images/icons/user-icon.svg"
+              alt=""
+            />
+            <input
+              class="footer__form-input"
+              name="phone"
+              type="text"
+              placeholder="Ваш телефон"
+            /><img
+              class="footer__form-input-icon"
+              src="./images/icons/phone-icon.svg"
+              alt=""
+            />
           </div>
           <button type="submit" class="form-button button">
             Бесплатная консультация
@@ -365,13 +369,15 @@
           <ul class="footer__contacts-list">
             <li class="footer__contacts-item">
               <p class="footer__contacts-title">Телефон</p>
-              <a href="tel:+79991234567" class="footer__contacts-link link"
+              <a href="tel:+79991234567" class="footer__contacts-link text-link"
                 >+7 999 123 45 67</a
               >
             </li>
             <li class="footer__contacts-item">
               <p class="footer__contacts-title">Почта</p>
-              <a href="mailto:ivanov@mail.ru" class="footer__contacts-link link"
+              <a
+                href="mailto:ivanov@mail.ru"
+                class="footer__contacts-link text-link"
                 >ivanov@mail.ru</a
               >
             </li>
@@ -439,7 +445,7 @@
               </div>
             </li>
           </ul>
-          <a href="#0" class="policy">Политика конфиденциальности</a>
+          <a href="#0" class="policy text-link">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>
