@@ -181,6 +181,10 @@
   border-radius: 6px;
 }
 
+.projects__list-item:hover {
+  transform: scale(1.02);
+}
+
 .projects {
   color: var(--main-color);
   background-color: var(--light-bg-color);
@@ -263,6 +267,10 @@
 .gallery__list-item {
   position: relative;
   cursor: pointer;
+}
+
+.gallery__list-item:hover {
+  transform: scale(1.02);
 }
 
 .gallery__list-image {
