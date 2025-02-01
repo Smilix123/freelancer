@@ -90,8 +90,8 @@
 .about__button {
   width: 300px;
   margin: 36px 0 0 0;
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
 }
 
 .about__button:hover {
