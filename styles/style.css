@@ -303,7 +303,7 @@
   background-color: var(--light-bg-color);
 }
 
-.footer__divider {
+.footer__contacts {
   display: flex;
   gap: 96px;
 }
