@@ -1,8 +1,8 @@
 :root {
-	--light-bg-color: #1b2944;
-	--dark-bg-color: #141f35;
-	--accent-color: #ffbb01;
-	--main-color: #fff;
+  --light-bg-color: #1b2944;
+  --dark-bg-color: #141f35;
+  --accent-color: #ffbb01;
+  --main-color: #fff;
 }
 
 *,
@@ -12,9 +12,15 @@
 }
 
 body {
-  width: 1280px;
   margin: 0 auto;
   font-family: "Roboto", serif;
+  width: 1280px;
+}
+
+@media (max-width: 1280px) {
+  body {
+    width: 320px;
+  }
 }
 
 h1,

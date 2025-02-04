@@ -10,7 +10,7 @@
 }
 
 .header {
-  padding: 40px 0 0 0;
+  padding: 40px 168px 0 168px;
   background-color: var(--light-bg-color);
 }
 
@@ -19,12 +19,7 @@
   justify-self: center;
   justify-content: space-between;
   align-items: center;
-  width: 944px;
-}
-
-.header__logo {
-  width: 100px;
-  height: 28px;
+  width: 100%;
 }
 
 .icons {
@@ -39,11 +34,6 @@
 
 .icon:hover {
   fill: var(--accent-color);
-}
-
-.link-icon {
-  width: 20px;
-  height: 20px;
 }
 
 .main {
@@ -179,6 +169,7 @@
 
 .projects__list-item {
   border-radius: 6px;
+  background-repeat: no-repeat;
 }
 
 .projects__list-item:hover {
@@ -197,9 +188,10 @@
   justify-content: flex-end;
   gap: 16px;
   width: 100%;
-  max-width: 304px;
-  height: 304px;
+  width: 304px;
+  min-height: 304px;
   padding: 32px 100px 32px 32px;
+  background-repeat: no-repeat;
 }
 
 .projects__card-overlay::before {
@@ -212,15 +204,15 @@
 }
 
 .projects-corner {
-  background-image: url(../images/project-card/bg-01.jpg);
+  background-image: url(../images/project-card/portfolio1.png);
 }
 
 .projects-golf {
-  background-image: url(../images/project-card/bg-02.jpg);
+  background-image: url(../images/project-card/portfolio2.png);
 }
 
 .projects-hiking {
-  background-image: url(../images/project-card/bg-03.jpg);
+  background-image: url(../images/project-card/portfolio3.png);
 }
 
 .projects__card-title {
@@ -418,4 +410,140 @@
   align-self: flex-end;
   color: var(--main-color);
   font-size: 15px;
+}
+
+@media (max-width: 1280px) {
+  .section {
+    padding: 48px 24px;
+  }
+
+  .header {
+    padding: 32px 24px 0;
+  }
+  .icon {
+    width: 16px;
+  }
+
+  .icons {
+    gap: 8px;
+  }
+
+  .icon-avatar {
+    width: 100px;
+  }
+
+  .about {
+    padding-top: 40px;
+  }
+
+  .about__inner {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  .about__me {
+    width: 100%;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 110px;
+    height: 110px;
+    border: 4px solid var(--main-color);
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .about__employment {
+    margin: 24px 0 0 0;
+    font-size: 16px;
+    line-height: 1.69;
+  }
+
+  .about__full-name {
+    margin: 0px 0 16px 0;
+    font-size: 24px;
+  }
+
+  .about__text {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .button {
+    width: 272px;
+    padding: 16px 25px;
+    font-size: 10px;
+    line-height: 1.3;
+  }
+
+  .about__button {
+    margin: 32px 0 0 0;
+  }
+  .title {
+    padding: 0 0 30px 0;
+    color: var(--main-color);
+    font-size: 19px;
+  }
+
+  .benefits__card-icon {
+    grid-row: span 2;
+    width: 32px;
+    height: 32px;
+  }
+
+  .benefits__list {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 32px;
+  }
+
+  .benefits__card {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    grid-template-rows: 35px 1fr;
+    column-gap: 16px;
+
+    width: 100%;
+    max-width: 272px;
+    height: 100%;
+    min-height: 99px;
+  }
+
+  .benefits__card-title {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .benefits__card-text {
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  .projects__list {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+
+  .projects__card {
+    width: 272px;
+    min-height: 166px;
+    padding: 0 100px 16px 16px;
+  }
+
+  .projects__list-item {
+    background-size: cover;
+  }
+
+  .projects__card-title {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  .projects__card-button {
+    width: 116px;
+    min-height: 32px;
+  }
 }
