@@ -110,6 +110,9 @@
 .avatar {
   width: 384px;
   height: 384px;
+  border: 4px solid var(--main-color);
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .benefits {
@@ -448,9 +451,6 @@
   .avatar {
     width: 110px;
     height: 110px;
-    border: 4px solid var(--main-color);
-    border-radius: 50%;
-    object-fit: cover;
   }
 
   .about__employment {
